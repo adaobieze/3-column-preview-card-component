@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* (paragraphs)*/
+/* (background, headings, buttons)*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-size: 15px;
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .wrapper {
+  max-width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 300px);
+  -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10px;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+body .wrapper .vehicle-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15%;
+}
+
+body .wrapper .vehicle-types * {
+  padding: 10% 0;
+}
+
+body .wrapper .vehicle-types img {
+  width: 30%;
+}
+
+body .wrapper .vehicle-types h2 {
+  font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f2f2f2;
+}
+
+body .wrapper .vehicle-types p {
+  font-family: 'Lexend Deca', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 30%;
+}
+
+body .wrapper .vehicle-types a {
+  all: unset;
+  font-family: 'Lexend Deca', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  width: 50%;
+  padding: 5%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+body .wrapper #sedans {
+  background-color: #e38826;
+}
+
+body .wrapper #sedans a {
+  color: #e38826;
+}
+
+body .wrapper #sedans a:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+body .wrapper #suvs {
+  background-color: #006970;
+}
+
+body .wrapper #suvs a {
+  color: #006970;
+}
+
+body .wrapper #suvs a:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+body .wrapper #luxury {
+  background-color: #004241;
+}
+
+body .wrapper #luxury a {
+  color: #004241;
+}
+
+body .wrapper #luxury a:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

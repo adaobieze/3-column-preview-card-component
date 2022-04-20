@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Deep-cyan: hsl(179, 100%, 13%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+$Light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons)*/
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size: 15px;    
+}
+
+body, html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: $Light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;   
+    
+    
+
+    & .wrapper {
+        max-width: 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        align-self: center;
+        border-radius: 10px;
+        margin-top: 5%;
+        overflow: hidden;
+
+        
+        & .vehicle-types {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 15%;            
+
+            & * {
+                padding: 10% 0;
+            }
+
+            & img {
+                width: 30%;
+            }
+
+            & h2 {
+                font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                font-size: 3rem;
+                color: $Light-gray;
+            }
+
+            & p {
+                font-family: 'Lexend Deca', Georgia, 'Times New Roman', Times, serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: $Transparent-white;
+                padding-bottom: 30%;
+            }
+
+            & a {
+                all: unset;
+                font-family: 'Lexend Deca', Georgia, 'Times New Roman', Times, serif;
+                font-weight: 400;
+                border: 2px solid $Light-gray;
+                background-color: $Light-gray;
+                width: 50%;
+                padding: 5%;
+                border-radius: 50px;
+                text-align: center;
+            }
+        }
+
+        & #sedans {
+            background-color: $Bright-orange;
+
+            & a {
+                color: $Bright-orange;
+
+                &:hover {
+                    background:transparent;
+                    color: $Transparent-white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & #suvs {
+            background-color: $Dark-cyan;
+
+            & a {
+                color: $Dark-cyan;
+
+                &:hover {
+                    background:transparent;
+                    color: $Transparent-white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & #luxury {
+            background-color: $Deep-cyan;
+
+            & a {
+                color: $Deep-cyan;
+
+                &:hover {
+                    background:transparent;
+                    color: $Transparent-white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+
+
